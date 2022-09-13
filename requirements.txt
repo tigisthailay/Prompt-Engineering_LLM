@@ -1,0 +1,9 @@
+matplotlib
+mlflow
+dvc
+sklearn
+setuptools
+panda
+tensorflow
+pytorch
+transformer
