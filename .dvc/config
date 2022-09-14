@@ -1,0 +1,4 @@
+[core]
+    remote = dvc-remot
+['remote "dvc-remot"']
+    url = C:/Users/user/AppData/Local/Temp/dvc-storage
