@@ -57,6 +57,8 @@ Extract name entities from text using only a few examples.
 
 <img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/keyword-extraction-gpt-models.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
+![Alt text](tg.png?raw=true "Propmt Engineering")
+
 <img src="https://github.com/tigisthailay/Prompt-Engineering_LLM/tree/main/images/tg.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
 
