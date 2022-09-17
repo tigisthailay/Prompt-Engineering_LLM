@@ -1,6 +1,6 @@
 matplotlib
 mlflow
 dvc
-sklearn
-setuptools
 panda
+cohere==2.2.5
+flask
