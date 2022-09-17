@@ -1,5 +1,13 @@
 ## Prompt Engineering: In-context learning with GPT-3 (LLM)
 
+**Table of content**
+
+- [Overview](#Project overview)
+- [Requirement](#requirement)
+- [Install](#install)
+- [Data](#data)
+- [Notebooks](#notebooks)
+
 #### Project Overview
 
 A client has a system that collects news artifacts from web pages, tweets, facebook posts, etc. The client is interested in scoring a given new artifact against a topic. The client has hired experts to score a few of these news items in the range from 0 to 10; a score of 0 means the news item is totally NOT relevant while a score of 10 means the news item is very relevant. The range of results between 0 and 10 signifies the  degree of relevance of the news item to the topic.
@@ -9,6 +17,22 @@ Why this project?
 The complexity, cost, and skills required to produce LLMs is immense. Only larger companies and other international groups are able to train LLMs at the size of hundreds of billions of parameters. Given the benefit of LLMs to drive business and society, it is useful to learn to use these monster AI models for multiple use in business and social problems.
 The need for specialized skills in prompt engineering will grow fast as more and and more companies start building their business around LLMs and similar products such as DALL-E 2, MidJourney, Bloom, etc.
 
+#### Requirement
+
+** matplotlib
+** mlflow
+** dvc
+** panda
+** cohere
+** flask
+
+#### Installation
+
+```
+git clone github.com/tigisthailay/Prompt-Engineering_LLM
+cd Prompt-Engineering_LLM
+pip install -r requerements.txt
+```
 #### Data
 There are two datasets you will use for this project
 
@@ -57,7 +81,7 @@ Extract name entities from text using only a few examples.
 
 <img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/keyword-extraction-gpt-models.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
-![Alt text](tg.png?raw=true "Propmt Engineering")
+![](images/tg.png)
 
 <img src="https://github.com/tigisthailay/Prompt-Engineering_LLM/tree/main/images/tg.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
