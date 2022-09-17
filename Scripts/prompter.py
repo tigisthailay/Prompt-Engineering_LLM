@@ -124,7 +124,7 @@ class Prompter():
                 return self.post_process(response), True
             return response, False
 
-    # job desccriptions
+     job desccriptions
 
 
     
