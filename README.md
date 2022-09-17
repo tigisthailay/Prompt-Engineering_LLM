@@ -2,7 +2,7 @@
 
 **Table of content**
 
-- [Overview](#Project overview)
+- [Overview](Project overview)
 - [Requirement](#requirement)
 - [Install](#install)
 - [Data](#data)
@@ -19,12 +19,14 @@ The need for specialized skills in prompt engineering will grow fast as more and
 
 #### Requirement
 
-** matplotlib
-** mlflow
-** dvc
-** panda
-** cohere
-** flask
+```
+matplotlib
+mlflow
+dvc
+panda
+cohere
+flask
+```
 
 #### Installation
 
@@ -81,19 +83,19 @@ Extract name entities from text using only a few examples.
 
 <img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/keyword-extraction-gpt-models.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
+##### Flask App
+
 ![](images/tg.png)
 
-<img src="https://github.com/tigisthailay/Prompt-Engineering_LLM/tree/main/images/tg.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
+#####  Generated Job Entity 
+![](images/op.png)
 
 
-<img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/op.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
-
-<img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/op2.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
-
+![](images/op2.png)
 
 #### Document Score
 
-<img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/eda.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
+![](images/eda.png)
 
 ...
