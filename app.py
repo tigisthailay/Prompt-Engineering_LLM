@@ -1,3 +1,5 @@
+#flask app
+
 from pyexpat import model
 from flask import *
 import pandas as pd
@@ -5,15 +7,15 @@ import numpy as np
 import pickle
 import os,sys
 import json
-
+#path
 sys.path.append(os.path.abspath(os.path.join("./Scripts/")))
-
+#import modules
 from prompter import Prompter
 
 app = Flask(__name__, static_folder='staticFiles') 
 
 
-
+#router
 @app.route('/')
 @app.route('/home', methods=['GET', 'POST'])
 def home():
@@ -40,6 +42,6 @@ def home():
     except Exception as e:
         return render_template('home.html', title='Home', error_text=str(e))
         
-
+# code driver
 if __name__ == '__main__':  
    app.run(debug = True)  
