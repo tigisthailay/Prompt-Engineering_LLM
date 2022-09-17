@@ -59,6 +59,12 @@ Extract name entities from text using only a few examples.
 
 <img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/tg.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
 
+
+<img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/op.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
+
+<img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/op2.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
+
+
 #### Document Score
 
 <img src="https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/images/eda.png" style="width:100%; max-width:400px" alt="Extract name entities from text using only a few examples" />
