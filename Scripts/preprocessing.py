@@ -5,40 +5,19 @@ import os
 sys.path.append(os.path.abspath(os.path.join("./Scripts/")))
 
 
-class DataCleaningPipeline():
+class DataPreprocessor():
     def __init__(self) -> None:
         pass
 
     def remove_irrelevant_pairs(self, data, key):
-        """
-            Removes the key:value pair when finds the key, unless throw KeyError
-        """
+       
         try:
             del data[key]
         except Exception as e:
             pass
         
     def clean_tokens(self, data, irrelevant_keys=['start', 'end', 'token_start', 'token_end']):
-        """'
-            Remove all the irrelevant key:value pairs in our token array
-             'tokens': [{'text': 'Bachelor',
-                'start': 0,
-                'end': 8,
-                'token_start': 0,
-                'token_end': 0,
-                'entityLabel': 'DIPLOMA'},
-                {'text': 'Mechanical Engineering',
-                'start': 21,
-                'end': 43,
-                'token_start': 4,
-                'token_end': 5,
-                'entityLabel': 'DIPLOMA_MAJOR'},
-            Will be converted to
-                 'tokens': [{'text': 'Bachelor',
-                    'entityLabel': 'DIPLOMA'},
-                    {'text': 'Mechanical Engineering',
-                    'entityLabel': 'DIPLOMA_MAJOR'},
-        """
+        
         try:
             final_data = []
             for d in data:
@@ -64,5 +43,14 @@ class DataCleaningPipeline():
 
         self.clean_tokens(data, irrelevant_keys=irrelevant_token_keys)
 
-    
+    def Punc(self, reg, stoken):
+        reg = re.compile('(@[a-z0-9]+)|([^0-9a-z \t])|(\w+:\/\/\S+)')
+        no_punc = []
+        for x in stoken:
+            review = []
+            for token in x:
+                new_token = reg.sub(u'', token)
+                if not new_token == u'':
+                    self.review.append(new_token)
+            self.no_punc.append(review)
 
