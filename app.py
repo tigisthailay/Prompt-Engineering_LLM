@@ -33,14 +33,14 @@ def home():
                 model = 'xlarge'
                 if int(ch_model) != 1:
                     model = 'f0cc02b7-c49e-4b41-b57d-101095e559a9-ft'
-                jdpipeline = Prompter(j_d, model=model, prompt_type=int(prompt_type), num_tokens=num_token, example_num=example_num)
-                response,val = jdpipeline.make_request()
+                jdp = Prompter(j_d, model=model, prompt_type=int(prompt_type), num_tokens=num_token, example_num=example_num)
+                response,val = jdp.make_request()
                
                 return render_template('home.html', title='Job Description Entity Extraction', error_text='', response=response, process_dict=val)
                 
         return render_template('home.html', title='Job Description Entity Extraction', error_text='')
     except Exception as e:
-        return render_template('home.html', title='Home', error_text=str(e))
+        return render_template('home.html', title='Job Description Entity Extraction', error_text=str(e))
         
 # code driver
 if __name__ == '__main__':  

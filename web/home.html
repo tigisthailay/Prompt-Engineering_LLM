@@ -1,41 +1,53 @@
 <html>
     <head>
        
-        <link rel="stylesheet" href='/css/css1.css' />
+        <link rel="stylesheet" href='/css/form.css' />
         <link rel="stylesheet" href='/css/css2.css' />
         <title>{{ title }}</title>
     </head>
     <body>
-        <div class="row">
+        <div class="web">
         <div class="form">
             <h3>Job Description Entity Extraction</h3>
             
             <form action="{{ url_for('home') }}" method="post">
                 
                 <hr>
+                <div class="input-group">
                 <label for="model">Model:</label>
                 <select id="model" name="model">
-                    <option value="1">Default(xlarge)</option>
                     <option value="2">Fine_Tuned_Model</option>
+                    <option value="1">xlarge</option>
                 </select>
+                </div>
 
+                <div class="input-group">
                 <label for="num_example">Number_Examples</label>
                 <input type="number" value="2" id="num_example" min="1" max="5" name="num_example" placeholder="Number of Examples" required>
+                </div>
 
+                <div class="input-group">
                 <label for="num_token">Number_Tokens</label>
                 <input type="number" value="150" id="num_token" min="100" max="250" name="num_token" placeholder="Number of Tokens" required>
-            
+                </div>
+
+                <div class="input-group">
                 <label for="prompt_type">Prompt_Way:</label>
                 <select id="prompt_type" name="prompt_type">
-                    <option value="1">Default(most similar)</option>
                     <option value="2">Random</option>
+                    <option value="1">Default</option>
                 </select>
+                </div>
 
+                <div class="input-group">
                 <label for="j_d">Job Description:</label>
                 <textarea id="j_d" name="j_d" rows="4" cols="50" required="true">
                 </textarea>
+                </div>
 
+                <div class="input-group">
                 <input type="submit" value="Submit">
+                </div>
                 </form>
         </div>
         <div class="form">
