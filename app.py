@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath(os.path.join("./Scripts/")))
 #import modules
 from prompter import Prompter
 
-app = Flask(__name__, static_folder='staticFiles') 
+app = Flask(__name__, static_folder='css') 
 
 
 #router
@@ -36,9 +36,9 @@ def home():
                 jdpipeline = Prompter(j_d, model=model, prompt_type=int(prompt_type), num_tokens=num_token, example_num=example_num)
                 response,val = jdpipeline.make_request()
                
-                return render_template('home.html', title='Home', error_text='', response=response, process_dict=val)
+                return render_template('home.html', title='Job Description Entity Extraction', error_text='', response=response, process_dict=val)
                 
-        return render_template('home.html', title='Home', error_text='')
+        return render_template('home.html', title='Job Description Entity Extraction', error_text='')
     except Exception as e:
         return render_template('home.html', title='Home', error_text=str(e))
         
