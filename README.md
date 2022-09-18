@@ -92,7 +92,7 @@ Extract name entities from text using only a few examples.
 ![](images/tg.png)
 
 ##### #2
-![](images/op3.png)
+![](images/opp.png)
 
 #### Document Score
 
