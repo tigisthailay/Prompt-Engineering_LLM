@@ -16,7 +16,7 @@ import config
 class Prompter():
     def __init__(self, inputval, model='xlarge', prompt_type=1,num_tokens=150, example_num=2) -> None:
         self.data = {}
-        with open('./Data/job_description_train.json', 'r') as f:
+        with open('./Data/relations_train.json', 'r') as f:
             self.data = json.loads(f.read())
         self.inputval = inputval
         self.model = model
@@ -118,7 +118,7 @@ class Prompter():
             response = self.send_request()
             response = response.replace('--', '').strip()
         if len(response) < 10:
-            raise Exception("Can not a meaningful response")
+            raise Exception("Can not get a meaningful response")
         else:
             if self.model=='xlarge':
                 return self.post_process(response), True

@@ -85,13 +85,13 @@ Extract name entities from text using only a few examples.
 
 ##### Flask App
 
-![](images/tg.png)
-
-#####  Generated Job Entity 
 ![](images/op.png)
 
+#####  Generated Job Entity 
+![](images/tg.png)
 
-![](images/op2.png)
+
+![](images/op3.png)
 
 #### Document Score
 

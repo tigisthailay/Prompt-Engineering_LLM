@@ -1,21 +1,20 @@
 #flask app
-
+import pickle
+import os,sys
+import json
 from pyexpat import model
 from flask import *
 import pandas as pd
 import numpy as np
-import pickle
-import os,sys
-import json
-#path
+
 sys.path.append(os.path.abspath(os.path.join("./Scripts/")))
-#import modules
-from prompter import Prompter
+#from pipeline import Prompter
+from pipeline import Prompter
 
 app = Flask(__name__, static_folder='css') 
 
 
-#router
+#app router 
 @app.route('/')
 @app.route('/home', methods=['GET', 'POST'])
 def home():
@@ -42,6 +41,6 @@ def home():
     except Exception as e:
         return render_template('home.html', title='Job Description Entity Extraction', error_text=str(e))
         
-# code driver
+# code driver function
 if __name__ == '__main__':  
    app.run(debug = True)  
